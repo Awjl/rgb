@@ -1,0 +1,103 @@
+.business-list .business-title{
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+  margin: 30px 0;
+}
+.business-list .business-text{
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.business-list .list-text{
+  padding: 50px 10% 0 20%;
+  box-sizing: border-box;
+  position: relative;
+}
+.line{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 150px;
+  height: 2px;
+  background: #0DD5FF;
+}
+.line-two{
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 2px;
+  height: 150px;
+  background: #0DD5FF;
+}
+.business-list .list div.list-text{
+  width: 55%;
+}
+.business-list .list div.list-img{
+  width: 45%;
+}
+.list .title{
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.list p{
+  font-size: 14px;
+  color: #999999;
+}
+.case{
+  padding: 100px 0;
+  background: #E6FAFF;
+}
+.case ul{
+  display: flex;
+  justify-content: space-between;
+}
+.case ul li:nth-child(2){
+  margin-top:150px;
+}
+.case ul p{
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+}
+.moveCasetitle{
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+  /* font-weight: bold; */
+  margin-top: 100px;
+}
+.moveCase{
+  padding: 80px 5%;
+  display:flex;
+  justify-content:space-between;
+}
+.moveCase .caseList{
+  position: relative;
+}
+.caseList .caseText{
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 0;
+  left: 0;
+  padding:100% 20px 0%;
+  background: rgba(000, 000, 000, 0.5);
+  box-sizing: border-box;
+}
+.caseText .caseTexttitle{
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.caseText p{
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 30px 0; 
+}
+.caseline span{
+  width: 50px;
+  height: 2px;
+  background: #0DD5FF;
+}

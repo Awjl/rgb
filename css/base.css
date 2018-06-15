@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {font-size: 16px; line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: #4A4A4A;  padding-top: 80px;}
+a { text-decoration: none; color: #666; background: none }
+ul, ol { list-style: none; }
+:focus{ outline:none;}
+.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear{clear: both;}
+.fl{ float: left; }
+.fr{float: right;}
+img{max-width: 100%;}
+.nav{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  top: 0;
+  left: 0;
+  background: rgba(000, 000, 000, 0);
+  z-index: 999;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.nav div img{
+vertical-align:middle;
+}
+.nav-on,.nav-active,.nav-three{
+  display: none;
+}
+.nav div span{
+  margin: 0 20px;
+  cursor: pointer;
+}
+.nav-list .nav-on{
+  display: block
+}
+.active .nav-active{
+  display: block;
+}
+.three .nav-three{
+  display: block;
+}
+.he50{height: 50px;}
+.he30{height: 30px;}
+.he80{height: 80px;}
+.he100{height: 100px;}
+.footer{
+  background:#4A4A4A;
+  padding: 80px;
+  overflow: hidden;
+  color: #fff;
+  clear: both;
+}
+.footer-contact{
+  width: 40%;
+}
+.footer-title{
+ margin: 20px 0;
+}
+.footer p{
+  font-size: 14px;
+  height: 25px;
+}
+.footer-line{
+  width: 50px;
+  height: 2px;
+  background: #fff;
+  margin: 20px 0;
+}
+.footer-about{
+  width: 50%;
+  display: flex;
+  justify-content:space-between;
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px）) { 
+  .center {
+    width: 750px;
+    margin: 0 auto;
+    clear: both;
+
+  }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) { 
+  .center {
+    width: 920px;
+    margin: 0 auto;
+    clear: both;
+  }
+ }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  .center {
+    width: 1170px;
+    margin: 0 auto;
+    clear: both;
+
+  }
+}

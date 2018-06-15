@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>联系我们</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=eOZtxesMWUnuHMvNrKq4Ti5rG9CVlVwM"></script>
+  <script src="js/all.js"></script>
+</head>
+
+<body>
+  <div class="nav" style="background: #fff">
+    <div class="active">
+      <div class="fl nav-active">
+        <img src="images/logo2.png" alt="">
+      </div>
+      <div class="fr nav-active">
+        <span>
+          <img src="images/nav-2.png" alt="">
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="he100">
+  </div>
+  <div class="contact-ours">
+    <div class="contact-title">联系我们</div>
+    <div class="contact-text">您可以填写下方的表格，让我们了解您的项目需求，这是一个良好的开始，我们会尽快与您联系。 也欢迎您给我们发邮件或是打电话，让我们听到您的声音!
+    </div>
+    <div class="inp">
+      <label for="">您的姓名：</label>
+      <input type="text">
+    </div>
+    <div class="inp">
+      <label for="">联系方式：</label>
+      <input type="text">
+    </div>
+    <div class="inp">
+      <label for="">电子邮箱：</label>
+      <input type="text">
+    </div>
+    <div class="inp-text">
+      <p>您的需求：</p>
+      <textarea name="" id="" rows="10" placeholder="让我们了解您的项目需求，我们会尽快与您联系。" resize：none></textarea>
+    </div>
+    <div class="btn">
+      <button>立即提交</button>
+    </div>
+    <div class="he100"></div>
+    <div class="he100"></div>
+  </div>
+  <div class="allbox">
+    <div id="allmap" style="width: 100%;height:500px;">
+
+    </div>
+    <div class="allmap-about">
+      <div class="mapbox-title">想要快速联系我们么？</div>
+      <div class="mapbox">
+        <p>
+          <span>
+            <img src="images/recruit/iphone.png" alt=""> </span>8621-63336525
+        </p>
+        <p>
+          <span>
+            <img src="images/recruit/emile.png" alt=""> </span>shangse@byrgb.com
+        </p>
+        <p>
+          <span>
+            <img src="images/recruit/dizhi.png" alt="">
+          </span>上海市黄浦区制造局路 833 弄 23 号 C 座
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="center">
+      <div class="footerLogo">
+        <img src="images/logo2.png" alt="">
+      </div>
+      <div class="he30"></div>
+      <div class="footer-contact fl">
+        <div class="footer-title">联系我们</div>
+        <p>上海市黄浦区制造局路833弄23号C座</p>
+        <p>8621-63336525</p>
+        <p>shangse@byrgb.com</p>
+        <div class="footer-line"></div>
+      </div>
+      <div class="footer-about fr">
+        <div>
+          <div class="footer-title">关于我们</div>
+          <p>了解更多</p>
+          <p>联系我们</p>
+        </div>
+        <div>
+          <div class="footer-title">合作案例</div>
+          <p>案例展示</p>
+          <p>合作伙伴</p>
+        </div>
+        <div>
+          <div class="footer-title">加入我们</div>
+          <p>加入我们</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  var map = new BMap.Map("allmap");          // 创建地图实例  
+  var point = new BMap.Point(121.493503, 31.205962);  // 创建点坐标  
+  map.centerAndZoom(point, 19);                 // 初始化地图，设置中心点坐标和地图级别
+  map.addControl(new BMap.NavigationControl());
+  map.addControl(new BMap.ScaleControl());
+  map.addControl(new BMap.OverviewMapControl());
+  map.addControl(new BMap.MapTypeControl());
+  map.enableScrollWheelZoom(true);
+  map.setCurrentCity("上海");
+  var marker = new BMap.Marker(new BMap.Point(121.493476, 31.205256));
+  map.addOverlay(marker);
+
+
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+.contact-ours{
+  max-width: 706px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-ours .contact-title{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.contact-text{
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+.contact-ours .inp{
+  max-width: 300px;
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #0DD5FF;
+  box-sizing: border-box;
+  margin: 30px auto;
+  font-size: 16px;
+  color: #4A4A4A;
+}
+.contact-ours .inp input{
+  border: none;
+  background: inherit;
+}
+.inp-text p{
+  max-width: 300px;
+  width: 90%;
+  margin: 0 auto 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.inp-text textarea{
+  max-width: 300px;
+  width: 90%;
+  font-size: 16px;
+  border: none;
+  background: rgba(13,213,255,0.1);
+  padding: 30px;
+  box-sizing: border-box;
+  resize:none;
+}
+.contact-ours .btn button{
+  width: 200px;
+  height: 40px;
+  background: #0DD5FF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.allbox{
+  position: relative;
+}
+.allmap-about{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  margin-top: -125px;
+}
+.allmap-about div{
+  width: 800px;
+  margin: 0 auto;
+}
+.allmap-about .mapbox-title{
+  font-size: 12px;
+  text-align: justify;
+  color: #9B9B9B;
+  margin-bottom: 20px;
+}
+.allmap-about div.mapbox{
+  height: 250px;
+  background: #0DD5FF;
+  color: #fff;
+  padding: 49px 0 0 122px;
+  box-sizing: border-box;
+}
+.allmap-about div.mapbox p {
+  margin-bottom: 30px;
+}
+.allmap-about div.mapbox p span{
+ margin-right: 30px;
+}

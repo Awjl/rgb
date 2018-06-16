@@ -6,6 +6,10 @@
   position: relative;
   overflow: hidden;
 }
+.about-bg:hover img{
+  animation:selectOne 1s  linear;
+  -webkit-animation:selectOne 1s  linear;
+}
 .about-text{
   position: absolute;
   left: 10.4%;
@@ -23,16 +27,34 @@
   text-align: center;
   font-size: 40px;
   font-weight: bold;
+  opacity: 0;
+  transition: all 2s;
+	transform: translateY(150px);
+}
+.animated .advantage-title{
+  opacity: 1;
+  transition: all 2s;
+	transform: translateY(0px);
 }
 .advantage-left{
   float: left;
   width: 50%;
   text-align: center;
+  opacity: 0;
+  transition: all 2s;
+	transform: translateX(-150px);
+}
+.animated .advantage-left{
+  transition-delay:1s;
+  opacity: 1;
+  transform: translateX(0px);
 }
 .advantage-right{
   width: 50%;
   float: left;
+  transition: all 2s;
 }
+
 .advantage-right ul li {
   width: 70%;
   padding: 20px 30px;
@@ -41,6 +63,26 @@
   font-size: 20px;
   color: #0DD5FF;
   margin-bottom: 60px;
+  box-sizing: border-box;
+  opacity:0;
+  transition: all 2s;
+  transform: translateX(150px);
+}
+.advantage-right li.liOne{
+  transition-delay:1s;
+}
+.advantage-right li.liTwo{
+  transition-delay:1.5s;
+}
+.advantage-right li.liThree{
+  transition-delay:2s;
+}
+.advantage-right li.liFour{
+  transition-delay:2.5s;
+}
+.animated .advantage-right li{
+  opacity: 1;
+  transform: translateX(0px);
 }
 .grow{
   position: relative;
@@ -51,11 +93,21 @@
   bottom:100px;
   left: 0;
   width: 100%;
+  opacity:0;
+  transition: all 2s;
+  transition-delay:3s;
+}
+.animated .growImg{
+  opacity: 1;
 }
 .growImgOne{
   margin: 0 auto;
   width: 26%;
   position: relative;
+  animation:myOne 6s infinite linear;
+  -webkit-animation:myOne 6s infinite linear;
+  transform-origin:center center;
+  -webkit-transform-origin: center center;
 }
 .growImgTwo{
   width: 100%;
@@ -63,16 +115,57 @@
   position: absolute;
   top:0;
   left: 0;
+  animation:myTwo 3s infinite linear;
+  -webkit-animation:myTwo 3s infinite linear;
+  transform-origin:center center;
+  -webkit-transform-origin: center center;
 }
+
+@keyframes myOne
+{
+  from {  transform:rotate(0deg);}
+  to {  transform:rotate(360deg);}
+}
+
+@-webkit-keyframes myOne /*Safari and Chrome*/
+{
+  from {  transform:rotate(0deg);}
+  to {  transform:rotate(360deg);}
+}
+
+@keyframes myTwo
+{
+  0% {transform:rotate(0deg)}
+  25% {transform:rotate(-90deg)}
+  50% {transform:rotate(-180deg)}
+  100% {transform:rotate(-360deg)}
+}
+
+@-webkit-keyframes myTwo /*Safari and Chrome*/
+{
+  0% {transform:rotate(0deg)}
+  25% {transform:rotate(-90deg)}
+  50% {transform:rotate(-180deg)}
+  100% {transform:rotate(-360deg)}
+}
+
+
+
 .grow .grow-list{
   clear: both;
   margin: 0 auto  80px;
   overflow: hidden;
+  opacity:0;
+  transition: all 2s;
 }
-.listOne{width:170px;}
-.listTwo{width: 43%;}
-.listThree{width:60%;}
-.listFour{width: 70%;}
+.grow .listOne{width:170px; transition-delay:1s;}
+.grow .listTwo{width: 43%; transition-delay:1.5s;}
+.grow .listThree{width:60%; transition-delay:2s;}
+.grow .listFour{width: 70%; transition-delay:2.5s;}
+.animated .grow-list{
+  opacity: 1;
+}
+
 .grow-item{
  width: 170px;
 }

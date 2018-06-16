@@ -8,18 +8,90 @@
   <title>业务</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/business.css">
+  <script src="js/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
+  <div class="nav-top">
+    <div class="nav-top-nav">
+      <div class="fl">
+        <img src="images/logo.png" alt="">
+      </div>
+    </div>
+    <div class="nav-top-left">
+
+    </div>
+    <div class="nav-top-right">
+
+    </div>
+    <div class="nav-top-list">
+      <ul>
+        <li>
+          <a href="index.html">
+            <img src="images/home.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="business.html">
+            <img src="images/business.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <img src="images/contact.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="recruit.html">
+            <img src="images/recruit.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <img src="images/about.png" alt="">
+          </a>
+        </li>
+      </ul>
+      <div class="nav-our">
+        <ul>
+          <li>
+            <a href="">
+              <img src="images/w1.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/w2.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/w3.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/w4.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/w5.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="nav" style="background: #fff">
     <div class="active">
       <div class="fl nav-active">
         <img src="images/logo2.png" alt="">
       </div>
-      <div class="fr nav-active">
-        <span>
-          <img src="images/nav-2.png" alt="">
-        </span>
+      <div class="nav-line fr">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </div>
@@ -34,9 +106,8 @@
       基于大数据，融合云治理，以创新数字营销为工具，提供数字化生态综合服务。
     </div>
     <div class="list">
-      <div class="list-text fl">
+      <div class="list-text fl list-one">
         <div class="line">
-
         </div>
         <div class="title">
           项目活动
@@ -45,18 +116,16 @@
           基于大数据，融合云治理 以创新数字营销为工具 本着专业、专心的职业操守 已经成功的帮助多家企业节约成本 转变效能，实现效益增值
         </p>
       </div>
-      <div class="list-img fr">
+      <div class="list-img fr list-two">
         <img src="images/business/listbg1.png" alt="">
       </div>
       <div class="clear" style="height: 40px;">
-
       </div>
-      <div class="list-img fl">
+      <div class="list-img fl list-three">
         <img src="images/business/list2.png" alt="">
       </div>
-      <div class="list-text fl">
+      <div class="list-text fl list-four">
         <div class="line-two">
-
         </div>
         <div class="title">
           项目活动
@@ -70,15 +139,15 @@
   <div class="clear he50"></div>
   <div class="case ">
     <ul class="center">
-      <li>
+      <li class="case-one">
         <img src="images/business/list3.png" alt="">
         <p>Type something</p>
       </li>
-      <li>
+      <li class="case-two">
         <img src="images/business/list4.png" alt="">
         <p>Type something</p>
       </li>
-      <li>
+      <li class="case-three">
         <img src="images/business/list5.png" alt="">
         <p>Type something</p>
       </li>
@@ -91,7 +160,7 @@
     更多案例
   </div>
   <div class="moveCase">
-    <div class="caseList">
+    <div class="caseList moveOne">
       <img src="images/business/list7.png" alt="">
       <div class="caseText">
         <div class="caseTexttitle">战略规划</div>
@@ -102,7 +171,7 @@
         </div>
       </div>
     </div>
-    <div class="caseList">
+    <div class="caseList moveTwo">
       <img src="images/business/list8.png" alt="">
       <div class="caseText">
         <div class="caseTexttitle">创意营销</div>
@@ -113,7 +182,7 @@
         </div>
       </div>
     </div>
-    <div class="caseList">
+    <div class="caseList moveThree">
       <img src="images/business/list9.png" alt="">
       <div class="caseText">
         <div class="caseTexttitle">创意营销</div>
@@ -124,7 +193,7 @@
         </div>
       </div>
     </div>
-    <div class="caseList">
+    <div class="caseList moveFour">
       <img src="images/business/list10.png" alt="">
       <div class="caseText">
         <div class="caseTexttitle">转型升级</div>
@@ -168,5 +237,29 @@
     </div>
   </div>
 </body>
+<script>
+  $(window).scroll(function () {
+
+    if ($(window).scrollTop() + $(window).height() > $(".business-list").offset().top) {
+      $(".business-list").addClass("animated");
+    }
+    if ($(window).scrollTop() + $(window).height() > $(".case").offset().top) {
+      $(".case").addClass("animated");
+    }
+    if ($(window).scrollTop() + $(window).height() > $(".moveCasetitle").offset().top) {
+      $(".moveCasetitle").addClass("animateddiv");
+    }
+    if ($(window).scrollTop() + $(window).height() > $(".moveCase").offset().top) {
+      $(".moveCase").addClass("animated");
+    }
+  })
+
+  $(".nav-line").click(function () {
+    $(".nav-top").css("top", "0")
+  })
+  $(".nav-top").click(function () {
+    $(".nav-top").css("top", "-100%")
+  })
+</script>
 
 </html>

@@ -10,18 +10,90 @@
   <link rel="stylesheet" href="css/contact.css">
   <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=eOZtxesMWUnuHMvNrKq4Ti5rG9CVlVwM"></script>
   <script src="js/all.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
+    <div class="nav-top">
+        <div class="nav-top-nav">
+          <div class="fl">
+            <img src="images/logo.png" alt="">
+          </div>
+        </div>
+        <div class="nav-top-left">
+    
+        </div>
+        <div class="nav-top-right">
+    
+        </div>
+        <div class="nav-top-list">
+          <ul>
+            <li>
+              <a href="index.html">
+                <img src="images/home.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="business.html">
+                <img src="images/business.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <img src="images/contact.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="recruit.html">
+                <img src="images/recruit.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <img src="images/about.png" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="nav-our">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="images/w1.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/w2.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/w3.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/w4.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/w5.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
   <div class="nav" style="background: #fff">
     <div class="active">
       <div class="fl nav-active">
         <img src="images/logo2.png" alt="">
       </div>
-      <div class="fr nav-active">
-        <span>
-          <img src="images/nav-2.png" alt="">
-        </span>
+      <div class="nav-line fr">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </div>
@@ -122,8 +194,12 @@
   map.setCurrentCity("上海");
   var marker = new BMap.Marker(new BMap.Point(121.493476, 31.205256));
   map.addOverlay(marker);
-
-
+  $(".nav-line").click(function() {
+    $(".nav-top").css("top","0")
+  })
+  $(".nav-top").click(function() {
+    $(".nav-top").css("top","-100%")
+  })
 </script>
 
 </html>

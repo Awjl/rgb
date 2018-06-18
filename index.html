@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <!-- <svg class="svg-center" width="199" height="199" id="svg">
+  <svg class="svg-center" width="199" height="199" id="svg">
     <path class="path-center" d="M 100 100 m -100 0 a 100 100 0 1 0 200 0 a 100 100 0 1 0 -200 0" />
   </svg>  
   <svg class="svg-borders" width="10000" height="5000">
@@ -23,7 +23,7 @@
     <path class="path-borders" d="M 5000 2500 m -770 0 a 770 770 0 1 0 1540 0 a 770 770 0 1 0 -1540 0" />
     <path class="path-borders" d="M 5000 2500 m -919 0 a 919 919 0 1 0 1838 0 a 919 919 0 1 0 -1838 0" />
     <path class="path-borders" d="M 5000 2500 m -1068 0 a 1068 1068 0 1 0 2136 0 a 1068 1068 0 1 0 -2136 0" />
-  </svg> -->
+  </svg>
   <div class="nav-top">
     <div class="nav-top-nav">
       <div class="fl">
@@ -357,6 +357,10 @@
   $(".nav-top").click(function () {
     $(".nav-top").css("top", "-100%")
   })
+  console.log($(window).height())
+  $(window).load(function(){  
+    document.body.classList.toggle('open-state');
+})  
 </script>
 
 </html>

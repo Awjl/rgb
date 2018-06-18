@@ -1,10 +1,10 @@
-(function () {
-  setTimeout(function () {
-    document.body.classList.toggle('open-state');
-    // $(".loder").delay(3000).css("display","none")
-  }, 2000)
+// (function () {
+//   setTimeout(function () {
+//     document.body.classList.toggle('open-state');
+//     // $(".loder").delay(3000).css("display","none")
+//   }, 2000)
 
-})();
+// })();
 var $slider = $('.wrapper');
 var startTime = Date.now(); //开始时间
 var time = 3000; //间隔时间

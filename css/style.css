@@ -28,7 +28,7 @@ html, body {margin: 0;padding: 0;position: relative;top: 0;left: 0; -webkit-box-
     height: 100%;
     background: #0DD5FF;  
     z-index: 9999;
-    transition: all 2s;
+    transition: all 1s;
   }
   .nav-top-nav{
     width: 100%;
@@ -64,11 +64,11 @@ html, body {margin: 0;padding: 0;position: relative;top: 0;left: 0; -webkit-box-
     left: 0;
     max-width: 400px;
     text-align: center;
-    top:27.9%;
+    top:22.9%;
     margin: 0 auto;
   }
   .nav-top-list>ul li {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
   .nav-top-list .nav-our ul {
     display: flex;
@@ -146,7 +146,7 @@ svg {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 20;
+  z-index: 9999;
 }
 
 .svg-center {
@@ -156,7 +156,7 @@ svg {
 
 path {
   fill: none;
-  stroke: #999;
+  stroke: #0DD5FF;
   stroke-width: 150px;
 }
 
@@ -182,6 +182,7 @@ path.path-center {
       -ms-transform: translate(-50%, -50%) rotate(90deg);
           transform: translate(-50%, -50%) rotate(90deg);
           opacity: 0;
+          z-index: 0;
 }
 
 .open-state .path-center {
@@ -366,7 +367,8 @@ path.path-center {
 .video{
   position: absolute;
   left: 0;
-  bottom: 13%;
+  bottom: 5%;
+  margin: auto 0;
   width: 60.8%;
   overflow: hidden;
   opacity: 0;
@@ -459,7 +461,7 @@ path.path-center {
 }
 .business-title{
   position: absolute;
-  top: 27.8%; 
+  top: 24.8%; 
   font-size: 40px;
   font-weight: bold;
   opacity: 0;
@@ -471,7 +473,7 @@ path.path-center {
 }
 .business-text{
   position: absolute;
-  top: 37.5%;
+  top: 34.5%;
   opacity: 0;
   transition: all 0.5s;
   transition-delay:2s;

@@ -174,7 +174,7 @@
         <span class="fr open">
           <img src="images/recruit/open.png" alt="">
         </span>
-        <span class="fr done" id="done">
+        <span class="fr done">
           <img src="images/recruit/done.png" alt="">
         </span>
       </p>
@@ -251,7 +251,6 @@
         <p>4、协助销售完成营销活动（包括新媒体）的销售及提案工作；</p>
         <p>5、研究营销活动（包括新媒体）发展方向，分析相关数据，提出新的营销建议； </p>
         <p>6、领导安排的其他工作。</p>
-
         <h4>任职要求</h4>
         <p>1、了解营销活动（包括新媒体：微信和移动互联网等），喜欢网络营销； </p>
         <p>2、本科及以上学历，有一定的网络营销、微博营销、品牌营销或相关文案策划及撰写经验； </p>
@@ -306,6 +305,10 @@
   })
   $(".nav-top").click(function () {
     $(".nav-top").css("top", "-100%")
+  })
+  $(".done").click(function(e) {
+    event.stopPropagation();//不会打印1，但是页面会跳转；   
+    $(".recruit-list>div").removeClass('all-recruit')
   })
 </script>
 

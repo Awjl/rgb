@@ -18,9 +18,8 @@ $(window).scroll(function () {
     $(".recruit-list").addClass("animatedDiv");
   } 
   $(".recruit-list>div").click(function() {
-    $(this).addClass("all-recruit ")
+    $(this).addClass("all-recruit")
+    console.log("11");
   })
-  $("#done").click(function() {
-    $("div").removeClass('all-recruit')
-  })
+
 })

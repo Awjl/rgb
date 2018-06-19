@@ -101,6 +101,7 @@
 }
 .recruit-list{
 	position: relative;
+	cursor: pointer;
 }
 .recruit-list .btn button{
 	width: 150px;
@@ -112,6 +113,9 @@
 }
 .done{
 	display: none;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
 }
 .recruit-list>div{
   width: 40%;
@@ -128,9 +132,7 @@
 	transform: translateY(150px);
 	overflow: hidden;
 }
-.recruit-list {
-  height: 60px;
-}
+
 .recruit-list div.recruit-one{
 	transition-delay:0.5s;
 }
